@@ -1,0 +1,16 @@
+Options +FollowSymlinks
+
+RewriteEngine on
+
+#any URL request that doesn't have an extension will be redirected to index.php
+RewriteRule !\.[a-z]{2,7}$ index.php
+
+ErrorDocument 404 /404.php
+
+<Files ~ "\.htaccess">
+Order allow,deny
+Deny from all
+</Files>
+
+#hopefully you aren't still using SVN?!?! :)
+RedirectMatch 404 \.svn/?$
