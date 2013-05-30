@@ -22,7 +22,7 @@
                 }
             }
 
-            Config::write('Controller', $controller);
+            Config::rw('Controller', $controller);
             $obj = $controller;
             die(call_user_func_array(array($obj, $action), array_slice($uri['segments'], 2)));
         }

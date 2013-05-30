@@ -6,8 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php echo (Config::read("Controller") == "main") ? "Welcome" : ucfirst(Config::read("Controller")); ?></title>
-        <meta property="og:title" content="<?php echo (Config::read("Controller") == "main") ? "Welcome" : ucfirst(Config::read("Controller")); ?>">
+        <title><?php echo (Config::rw("Controller") == "main") ? "Welcome" : ucfirst(Config::rw("Controller")); ?></title>
+        <meta property="og:title" content="<?php echo (Config::rw("Controller") == "main") ? "Welcome" : ucfirst(Config::rw("Controller")); ?>">
         <meta property="og:url" content="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
