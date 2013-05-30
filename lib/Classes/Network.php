@@ -27,8 +27,18 @@
             die(call_user_func_array(array($obj, $action), array_slice($uri['segments'], 2)));
         }
 
-        private static function is_https() {
-
+        public static function full_url() {
+            if (!defined('FULL_URL')) {
+                $s = null;
+                if (env('HTTPS')) {
+                    $s = 's';
+                }
+                $httpHost = env('HTTP_HOST');
+                if (isset($httpHost)) {
+                    return 'http'.$s.'://'.$httpHost;
+                }
+                unset($httpHost, $s);
+            }
         }
 
         private static function uri_structure() {

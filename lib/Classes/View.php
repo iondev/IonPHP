@@ -7,9 +7,6 @@
 			self::$vars[$key] = $value;
 		}
 
-        /** @noinspection PhpInconsistentReturnPointsInspection */
-        /** @noinspection PhpInconsistentReturnPointsInspection */
-        /** @noinspection PhpInconsistentReturnPointsInspection */
         public static function model($filename) {
 			$path = APPPATH.DS.'Models'.DS.$filename.'.php';
 			

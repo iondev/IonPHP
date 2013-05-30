@@ -10,7 +10,7 @@
 body {
   background: #272B2D;
   color: #b2b9bC;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   font-weight: 300;
   line-height: 2em;
 }
@@ -18,6 +18,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: bold;
 }
+
+a {
+    text-decoration: none;
+    color: #00AEFF;
+}
+
 .button {
   background: #49825c;
   border-radius: 0.25em;
@@ -26,9 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 #nav a {
-  color: #fff;
-  font-style: italic;
-  text-decoration: none;
+  word-spacing: 2px;
 }
 #hero {
   background: #32393C;

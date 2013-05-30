@@ -2,12 +2,9 @@
 
 	class Main {
 	
-		public static function index($home = null, $test = 1) {
-			//Ion::import('reCAPTCHA');
+		public static function index() {
 			View::assign('username', 'Graham');
-			View::render('test');
-			
-			echo $home." is ".$test;
+			View::render('mission');
 		}
 		
 		public function test() {
