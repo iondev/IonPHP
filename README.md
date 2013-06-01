@@ -1,12 +1,14 @@
 IonPHP
 ======
-
-Lightweight PHP API Framework
+IonPHP is a Lightweight PHP API Framework which is currently being developed to make our new website, Volt Gaming.
 
 Developers
 ======
-*Graham Newton
-*Lewis Scally
+- [x] Graham Newton
+- [x] Lewis Scally
+
+Functions
+======
 
 Database Functions
 ```php
