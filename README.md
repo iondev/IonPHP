@@ -4,8 +4,8 @@ IonPHP is a Lightweight PHP API Framework which is currently being developed to 
 
 Developers
 ======
-- [x] Graham Newton
-- [x] Lewis Scally
+- Graham Newton
+- Lewis Scally
 
 Functions
 ======
