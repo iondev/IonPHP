@@ -3,6 +3,11 @@ IonPHP
 
 Lightweight PHP API Framework
 
+Developers
+======
+*Graham Newton
+*Lewis Scally
+
 Database Functions
 ```php
 Database::load("Database", "Classes");
@@ -23,4 +28,13 @@ print_r($result);
 
 //Changing Fetch type
 Database::setFetchType(1);
+```
+
+Configuration Functions
+```php
+//Store data
+Config::rw("test", "Hello World");
+
+//Reading out the stored information
+echo Config::rw("test");
 ```
