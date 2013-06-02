@@ -19,6 +19,7 @@
     Security::defend();
 
     Autoloader::load('Config');
+    Autoloader::load('Cache');
     Autoloader::load('View');
     Autoloader::load('Model');
     Autoloader::load('Controller');
