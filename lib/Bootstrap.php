@@ -18,10 +18,11 @@
     //Run base secruity check
     Security::defend();
 
-    Autoloader::load('Network');
     Autoloader::load('Config');
     Autoloader::load('View');
     Autoloader::load('Controller');
+    Autoloader::load('Encryption');
+    Autoloader::load('Network');
 
     //Set the base Config ini file
     Config::rw("source", APPLIB."Config".DS."source.ini");
