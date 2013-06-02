@@ -64,6 +64,9 @@ class View
             //Display out application version
             $contents = str_replace('{APP_VERSION}', app_version(), $contents);
 
+            //CSRF Protection
+            $contents = str_replace('{CSRF_TOKEN}', CSRF::generate_token(), $contents);
+
             //Template: Variables
             foreach (self::$vars as $key => $value) {
                 $contents = preg_replace('/\[' . $key . '\]/', $value, $contents);

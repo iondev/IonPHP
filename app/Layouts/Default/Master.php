@@ -11,6 +11,7 @@
         <meta property="og:url" content="<?php echo Network::full_url().$_SERVER['REQUEST_URI']; ?>">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <meta content="{CSRF_TOKEN}" name="csrf_token">
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic" type="text/css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="public/css/minify.php">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

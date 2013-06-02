@@ -1,5 +1,7 @@
 <?php if (!defined('ROOT')) die('No direct script access allowed');
 
+    session_start();
+
 	//Require the core files
 	require LIB.'Basics.php';
     require LIB.'Classes'.DS.'Autoloader.php';
@@ -24,6 +26,11 @@
     Autoloader::load('Model');
     Autoloader::load('Controller');
     Autoloader::load('Encryption');
+    Autoloader::load('CSRF');
+
+    //Create CSRF token
+    CSRF::generate_token();
+
     Autoloader::load('Network');
 
     //Set the base Config ini file
