@@ -42,6 +42,8 @@ class View
 
     public static function render($path)
     {
+        //Start the buffer
+        ob_start('ob_gzhandler');
 
         //Load the Base Controller
         self::load_controller('Base');

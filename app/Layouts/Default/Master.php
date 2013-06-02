@@ -12,8 +12,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="public/css/style.css">
-        <link rel="stylesheet" type="text/css" href="public/css/style-wide.css">
+        <link rel="stylesheet" type="text/css" href="public/css/minify.php">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script>window.jQuery || document.write('<script src="public/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 		<script src="public/js/skel.min.js">
