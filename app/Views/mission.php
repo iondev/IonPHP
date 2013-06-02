@@ -19,7 +19,7 @@
             <span>In May of 2013 Graham Newton, Lewis Scally and Jamie Wilkinson decided to form their own Gaming Community named Volt.
             Project planning began 20/05/2013 as well as ideas on how we should construct the website, coding began! On the 30th of May
             a small based Gaming Community named <a href="http://coldhearteduk.com">ColdHeartedUK</a> approached Volt and asked to merge with us, we accepted.</span>
-            [recall]
+            <div class="btn-blue">test</div>
         </div>
 		<div class="4u">
 			<h1>Meet the Team</h1>

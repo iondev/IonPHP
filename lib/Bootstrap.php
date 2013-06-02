@@ -24,6 +24,7 @@
     Autoloader::load('Cache');
     Autoloader::load('View');
     Autoloader::load('Model');
+    Autoloader::load('Loader');
     Autoloader::load('Controller');
     Autoloader::load('Encryption');
     Autoloader::load('CSRF');
@@ -31,6 +32,10 @@
     //Create CSRF token
     CSRF::generate_token();
 
+    //Test Loader
+    $helper = Loader::helpers('html');
+
+    //Load URL routing
     Autoloader::load('Network');
 
     //Set the base Config ini file
