@@ -33,5 +33,3 @@
 
     //We shall load the database class but we wont connect
     Autoloader::load('Database');
-
-    //TEst
