@@ -27,7 +27,7 @@
     Autoloader::load('Network');
 
     //Set the base Config ini file
-    Config::rw("source", APPLIB."Config".DS."source.ini");
+    Config::rw("source", LIB."Config".DS."source.ini");
 
     //Start the router, this will start the Main Controller
     Network::route();

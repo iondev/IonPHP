@@ -4,6 +4,32 @@ class Config
 {
     protected static $_config = array();
 
+    private static $data;
+
+    public static function get_param($section, $name = null) {
+        if (self::$data === null) {
+            self::$data = parse_ini_file(LIB.'Config'.DS.'source.ini', true);
+            if (self::$data === false) {
+                self::handleError('Configuration file missing/corrupt.');
+            }
+        }
+
+        if (array_key_exists($section, self::$data)) {
+            if ($name && array_key_exists($name, self::$data[$section])) {
+                return self::$data[$section][$name];
+            }else{
+                return self::$data[$section];
+            }
+        }else{
+            return false;
+        }
+    }
+
+    private static function handleError($string) {
+        echo '<h2 class="color:red">Fatal Error: ' . $string . '</h2>';
+        exit();
+    }
+
     public static function rw($key, $value = null)
     {
         if ($key === 'source' && file_exists($value))
