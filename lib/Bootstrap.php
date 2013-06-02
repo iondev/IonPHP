@@ -16,6 +16,11 @@
 	spl_autoload_register(['Autoloader', '_load']);
 	
 	//Load essential class files
+    Autoloader::load('Security');
+
+    //Run base secruity check
+    Security::defend();
+
     Autoloader::load('Network');
     Autoloader::load('Config');
     Autoloader::load('View');
