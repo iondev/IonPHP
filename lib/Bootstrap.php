@@ -20,6 +20,7 @@
 
     Autoloader::load('Config');
     Autoloader::load('View');
+    Autoloader::load('Model');
     Autoloader::load('Controller');
     Autoloader::load('Encryption');
     Autoloader::load('Network');
