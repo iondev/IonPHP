@@ -25,13 +25,13 @@
 			<h1>Meet the Team</h1>
             <div class="row">
                 <section class="4u">
-                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c42.42.529.529/s160x160/388_10151194633654333_1116148150_n.jpg" class="photo" title="Founder & Developer: Graham Newton">
+                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c42.42.529.529/s160x160/388_10151194633654333_1116148150_n.jpg" width="160px" height="160px" class="photo" title="Founder & Developer: Graham Newton">
                     <span>Graham Newton</span>
                     <p><b>Founder & Developer</b></p>
-                    <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc1/c150.42.529.529/s160x160/306686_3026717167182_1393016388_n.jpg" class="photo" title="Founder & Developer: Lewis Scally">
+                    <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc1/c150.42.529.529/s160x160/306686_3026717167182_1393016388_n.jpg" width="160px" height="160px" class="photo" title="Founder & Developer: Lewis Scally">
                     <span>Lewis Scally</span>
                     <p><b>Founder & Developer</b></p>
-                    <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc1/s160x160/331390_2358065118305_1359325831_o.jpg" class="photo" title="Founder & Developer: Jamie Wilkinson">
+                    <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc1/s160x160/331390_2358065118305_1359325831_o.jpg" width="160px" height="160px" class="photo" title="Founder & Developer: Jamie Wilkinson">
                     <span>Jamie Wilkinson</span>
                     <p><b>Founder & Developer</b></p>
                 </section>

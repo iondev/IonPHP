@@ -28,9 +28,7 @@
 		      }
 		}
 		</script>
-		<script src="public/js/skel-ui.min.js"></script>
-        <script src="public/js/vendor/modernizr-2.6.2.min.js"></script>
-        <!--[if lte IE 8]><script src="public/js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<script src="public/js/minify.php"></script>
 	</head>
 	<body>
         <!--[if lt IE 7]>
