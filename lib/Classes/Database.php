@@ -9,6 +9,12 @@ class Database
     protected static $sql;
     protected static $result;
 
+    /*
+     *@name connect
+     *@param $db (connection information)
+     *@return connection to the MySQL database or error if failed
+     *
+     */
     public static function connect($db)
     {
         self::$mysqli = new mysqli($db['host'], $db['user'], $db['pass'], $db['table']);
@@ -18,6 +24,12 @@ class Database
         }
     }
 
+    /*
+     *@name setFetchMode
+     *@param $type (Fetch Mode type)
+     *@return MYSQLI_NUM / MYSQLI_ASSOC / MYSQLI_BOTH
+     *
+     */
     public static function setFetchMode($type)
     {
         switch ($type) {
@@ -35,6 +47,13 @@ class Database
         }
     }
 
+    /*
+     *@name query
+     *@param $query (Query string)
+     *@return returns query or result
+     *
+     */
+
     public static function query($sql)
     {
         self::$sql = self::$mysqli->real_escape_string($sql);
@@ -46,6 +65,13 @@ class Database
             exit;
         }
     }
+
+    /*
+     *@name get
+     *@param $field (The field we want from the database query we just used)
+     *@return query result from databases selected row
+     *
+     */
 
     public static function get($field = null)
     {
@@ -62,10 +88,22 @@ class Database
         return $data;
     }
 
+    /*
+     *@name id
+     *@return the last inserted ID
+     *
+     */
+
     public static function id()
     {
         return self::$mysqli->insert_id;
     }
+
+    /*
+     *@name __destruct()
+     *@return destorys connection to the database
+     *
+     */
 
     public function __destruct()
     {

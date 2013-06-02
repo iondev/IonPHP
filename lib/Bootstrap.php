@@ -26,3 +26,5 @@
 
     //Start the router, this will start the Main Controller
     Network::route();
+
+    //We shall load the database class but we wont connect
