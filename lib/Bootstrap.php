@@ -2,7 +2,7 @@
 
 	//Require the core files
 	require LIB.'Basics.php';
-	require LIB.'Classes'.DS.'Ion.php';
+    require LIB.'Classes'.DS.'Autoloader.php';
 
     //Check PHP version before we continue
     if (version_compare(PHP_VERSION, '5.4.0', '<')) {
@@ -13,12 +13,13 @@
     @magic_quotes_runtime(0);
 	
 	//set the autoload register to Ion::_load
-	spl_autoload_register(['Ion', '_load']);
+	spl_autoload_register(['Autoloader', '_load']);
 	
 	//Load essential class files
-	Ion::load('Network', 'Classes');
-	Ion::load('Config', 'Classes');
-	Ion::load('View', 'Classes');
+    Autoloader::load('Network');
+    Autoloader::load('Config');
+    Autoloader::load('View');
+    Autoloader::load('Controller');
 
     //Set the base Config ini file
     Config::rw("source", APPLIB."Config".DS."source.ini");

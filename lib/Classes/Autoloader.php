@@ -1,6 +1,6 @@
 <?php if (!defined('ROOT')) die('No direct script access allowed');
 
-class Ion
+class Autoloader
 {
 
     public static $version = '1.0';
@@ -25,7 +25,7 @@ class Ion
     /*
      * Method for autoloading class files
      */
-    public static function load($className, $location)
+    public static function load($className, $location = 'Classes')
     {
         self::$_classMap[$className] = $location;
     }

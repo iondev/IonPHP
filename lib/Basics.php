@@ -99,12 +99,8 @@
 		}
 	}
 
-    if (!function_exists('load_file')) {
-        function load_file($file, $dir) {
-            if (file_exists(APPLIB."{$dir}".DS."{$file}.php")) {
-                echo "Hello";
-            }else{
-                echo "bye";
-            }
+    if (!function_exists('app_version')) {
+        function app_version() {
+            return "1.0.0";
         }
     }

@@ -39,7 +39,7 @@
         <![endif]-->  
   		{PAGE_CONTENT}
     <div class="container">
-        <p>Current Framework Version: <?php echo Ion::version(); ?></p>
+        <small>Current Framework Version: {APP_VERSION}, Follow the project on <a href="https://github.com/iondev/IonPHP" style="color: #00AEFF">Github</a></small>
     </div>
 	</body>
 </html>

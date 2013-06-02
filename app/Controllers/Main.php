@@ -3,7 +3,8 @@
 	class Main {
 	
 		public static function index() {
-			View::assign('username', 'Graham');
+            $model = View::model('Blog');
+            View::assign('recall', $model::recall("Hello Model"));
 			View::render('mission');
 		}
 		

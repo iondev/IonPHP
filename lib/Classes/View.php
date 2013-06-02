@@ -59,6 +59,9 @@ class View
             //Once loaded, replace {PAGE_CONTENT} with view file
             $contents = str_replace('{PAGE_CONTENT}', $contents = file_get_contents($path), $layout);
 
+            //Display out application version
+            $contents = str_replace('{APP_VERSION}', app_version(), $contents);
+
             //Template: Variables
             foreach (self::$vars as $key => $value) {
                 $contents = preg_replace('/\[' . $key . '\]/', $value, $contents);
