@@ -39,7 +39,12 @@
         <![endif]-->  
   		{PAGE_CONTENT}
     <div class="container">
-        <small>Current Framework Version: {APP_VERSION}, Follow the project on <a href="https://github.com/iondev/IonPHP" style="color: #00AEFF">Github</a></small>
+        <div class="4u">
+            <small>Current Framework Version: {APP_VERSION}<br> Follow the project on <a href="https://github.com/iondev/IonPHP" style="color: #00AEFF">Github</a></small>
+        </div>
+        <div class="4u">
+            <small>Render: <?php echo round(Config::rw('clock_start') - Config::rw('clock_end'), 4); ?></small>
+        </div>
     </div>
 	</body>
 </html>
