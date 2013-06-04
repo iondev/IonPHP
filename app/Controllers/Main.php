@@ -5,7 +5,7 @@
 		public static function index() {
             $model = View::model('Blog');
             View::assign('recall', $model::recall("Hello Model"));
-			View::render('mission');
+			View::render('status');
 		}
 		
 		public function test() {

@@ -101,6 +101,6 @@
 
     if (!function_exists('app_version')) {
         function app_version() {
-            return "1.0.0";
+            return floatval(1.0);
         }
     }

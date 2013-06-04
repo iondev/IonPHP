@@ -32,9 +32,6 @@
     //Create CSRF token
     CSRF::generate_token();
 
-    //Test Loader
-    $helper = Loader::helpers('html');
-
     //Load URL routing
     Autoloader::load('Network');
 

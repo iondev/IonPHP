@@ -27,7 +27,7 @@ class Network
 
         Config::rw('Controller', $controller);
         $obj = $controller;
-        die(call_user_func_array(array($obj, $action), array_slice($uri['segments'], 2)));
+        exit(call_user_func_array(array($obj, $action), array_slice($uri['segments'], 2)));
     }
 
     public static function full_url()
@@ -62,9 +62,9 @@ class Network
 
     private static function detect_controller($name)
     {
+		$name = ucfirst($name);
         if (file_exists(APPPATH . DS . 'Controllers' . DS . $name . '.php')) {
             require_once APPPATH . DS . 'Controllers' . DS . $name . '.php';
-            return;
         } else {
             show_error("Could not find Controller: {$name}");
         }
